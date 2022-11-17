@@ -1,0 +1,126 @@
+
+*{
+    box-sizing: border-box;
+    
+}
+body{
+    
+}
+
+.box-box1{
+    background-color: gray;
+    /* width: 100%; */
+    max-width: 31%;
+    position: relative;
+    height: 160px;
+display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.box-box2{
+    background-color: gray;
+    /* width: 100%; */
+    max-width: 31%;
+    position: relative;
+    height: 160px;
+display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    align-items: center;
+    border: 3px solid black;
+}
+
+.box-box3{
+    background-color: gray;
+    /* width: 100%; */
+    max-width: 31% ;
+    position: relative;
+    height: 160px;
+display: flex;
+    padding: 20px;
+    padding-top: 30px;
+    align-items: center;
+    border: 3px solid black;
+}
+#chk{ position: absolute;
+    right: 0;
+    top: 0;
+    width: 100px;
+    text-align: center;
+    height: 25px;
+background-color: blue;
+border: 1px solid black;
+}
+.container{
+    width: 98%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    gap: 17px;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    font-size: 50px;
+    font-weight: 900;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* mobile */
+@media screen and (max-width: 767px) {
+    .container{
+        flex-direction: column;
+        
+    }
+     .box-box1{
+        background-color: aqua;
+        max-width: 50%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+    .box-box2{
+        background-color: aqua;
+        max-width: 50%;
+        flex-wrap: nowrap;
+        overflow: hidden;
+    }
+        .box-box3{
+            background-color: aqua;
+            max-width: 50%;
+            flex-wrap: wrap;
+            overflow: hidden;
+    } 
+}
+
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .container{
+        flex-wrap: wrap;
+    }
+    .box-box1{
+        background-color: aqua;
+        max-width: 45%;
+        
+        overflow: hidden;
+    }
+    .box-box2{
+        background-color: aqua;
+        max-width: 45%;
+        
+        overflow: hidden;
+    }
+        .box-box3{
+            background-color: aqua;
+            max-width: 90%;
+            flex-wrap: wrap;
+            margin-bottom: 50vh;
+            
+    }
+}
